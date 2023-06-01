@@ -1,0 +1,14 @@
+duckdb
+pandas
+python-dotenv
+setuptools
+google-cloud-storage
+altair
+streamlit
+streamlit-authenticator
+watchdog
+bcrypt
+PyJWT
+PyYAML
+typer
+dtale

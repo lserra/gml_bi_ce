@@ -1,0 +1,12 @@
+__pycache__
+.DS_Store
+.git
+.gitignore
+.idea
+src/__pycache__
+src/extract/__pycache__
+src/load/__pycache__
+src/transform/__pycache__
+src/utils/__pycache__
+venv/
+

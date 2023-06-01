@@ -1,0 +1,29 @@
+FROM python:3.9-buster
+
+LABEL maintainer="laercio.serra@gmail.com"
+LABEL version="1.0"
+LABEL description="get more leads [cnpj]"
+
+# set a directory for the app
+WORKDIR /gml_bi_ce
+
+# copy all the files to the container
+COPY ../.. .
+
+# install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    software-properties-common \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
+RUN chmod a+x *.sh && chmod a+x *.py
+
+ENV APP_PATH /gml_bi_ce
+
+EXPOSE 8501
+
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+CMD ["bash", "start_app.sh", "terminal"]

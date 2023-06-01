@@ -1,0 +1,13 @@
+cookie:
+  expiry_days: 2
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    admin:
+      email: laercio.serra@gmail.com
+      name: Admin
+      password: $2b$12$eL1c9Ykeiwb/b14nzg24UOOKePROWGLezY9AUTeuNhtehcig4VbwW
+preauthorized:
+  emails:
+    - laercio.serra@gmail.com
