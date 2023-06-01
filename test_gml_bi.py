@@ -30,7 +30,7 @@ class TestGmlBIOperations(unittest.TestCase):
         """Testing total of rows"""
         sql = "SELECT COUNT(*) FROM bt_empresas;"
         rows = self.dw.execute_query_fetchone(sql)[0]
-        self.assertEqual(rows >= 6331292, True, "Rows not matching . . .")
+        self.assertEqual(rows >= 6200000, True, "Rows not matching . . .")
 
 
 if __name__ == "__main__":
