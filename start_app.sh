@@ -7,7 +7,6 @@
 TOOL=$1
 
 export TERM=xterm
-#cd $APP_PATH || exit
 
 clear
 
