@@ -9,5 +9,5 @@ src/load/__pycache__
 src/transform/__pycache__
 src/utils/__pycache__
 venv/
-*.csv
-*.log
+data/input/bt_empresas_db.csv
+logs/loading-data-gold-layer.log
