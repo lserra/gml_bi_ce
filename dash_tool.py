@@ -107,7 +107,7 @@ def start():
         st.write("Top 5 Cnae Fiscal", count_cnae_fiscal)
 
     st.divider()
-    st.subheader("Data Distribuition")
+    st.subheader("Data Distribution")
 
     col_chart1, col_chart2 = st.columns(2)
     with col_chart1:

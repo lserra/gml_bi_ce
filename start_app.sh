@@ -4,10 +4,10 @@
 # Created by: laercio.serra@gmail.com
 # Created at: 25/04/2023
 # ======================================================================================
-ENV=$1
+TOOL=$1
 
 export TERM=xterm
-cd $APP_PATH || exit
+#cd $APP_PATH || exit
 
 clear
 
@@ -19,17 +19,14 @@ echo "==========================================================================
 echo
 echo "SETTINGS:"
 echo "> Working dir:" $PWD
-echo "> Environment:" $ENV
+echo "> BI Tool:" $TOOL
 echo
-echo "STARTING APPLICATION . . ."
 
-case $ENV in
-"dev")
-  /bin/bash ./start_app_dev.sh;;
-"test")
-  /bin/bash ./start_app_test.sh;;
-"prod")
-  /bin/bash ./start_app_prod.sh;;
+case $TOOL in
+"dash")
+  /bin/bash $PWD/start_bi_app.sh;;
+"eda")
+  /bin/bash $PWD/start_eda_app.sh;;
 "terminal")
   /bin/bash;;
 esac

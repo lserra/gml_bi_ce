@@ -22,8 +22,9 @@ def delete_data(local_path):
     """Delete old data in the local path"""
     files = os.listdir(local_path)
     for file in files:
-        os.remove(f"{local_path}{file}")
-        print(f"-----> File {file} have been deleted from {local_path}")
+        if not "README" in file:
+            os.remove(f"{local_path}{file}")
+            print(f"-----> File {file} have been deleted from {local_path}")
 
 
 def load_data(local_path):
@@ -54,4 +55,4 @@ def run():
     delete_data(local_path=output_path)
     total_rows = load_data(local_path=input_path)
     if total_rows > 0:
-        print(f"\n-----> Process finished successfully!")
+        print(f"-----> Process finished successfully!")
