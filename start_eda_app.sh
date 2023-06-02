@@ -111,7 +111,7 @@ fi
 
 echo
 echo "=================================================================================="
-echo "[                           RUNNING TESTS . . .                                  ]"
+echo "[                           TESTING APPLICATION . . .                            ]"
 echo "=================================================================================="
 echo
 
@@ -126,12 +126,13 @@ fi
 
 echo
 echo "=================================================================================="
-echo "[                        STARTING BI APPLICATION . . .                           ]"
+echo "[                          STARTING APPLICATION . . .                            ]"
 echo "=================================================================================="
 echo
 
 echo "> Enter UF:"
 read UF
+
 # Check if file is readable/executable
 file="wat.py"
 if [ -r $file ]; then
