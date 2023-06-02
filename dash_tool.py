@@ -44,7 +44,6 @@ end_timer = ""
 
 
 def page_header():
-    # st.set_page_config(layout="wide")
     st.title("Get More Leads (CNPJ)")
     with st.expander("About the data"):
         st.write(env.APP_FULL_DESC)
