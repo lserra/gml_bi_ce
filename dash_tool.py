@@ -86,7 +86,6 @@ def start():
     kpi2 = metric.get_value_total_empresas_individual(uf, municipio, porte)
     kpi3 = metric.get_value_total_empresas_sociedade_anonima(uf, municipio, porte)
     kpi4 = metric.get_value_total_empresas_sociedade_limitada(uf, municipio, porte)
-    # kpi5 = metric.get_value_total_empresas_publica(uf, municipio, porte)
 
     col_kpi1, col_kpi2, col_kpi3, col_kpi4 = st.columns(4)
     col_kpi1.metric("empresas", str(kpi1))
@@ -125,11 +124,9 @@ def start():
     st.divider()
     st.subheader("Data Preview")
 
-    # table_count = table.count_rows(uf, municipio, porte)
     table_head = table.list_rows(uf, municipio, porte)
     table_full = table.export_rows(uf, municipio, porte)
 
-    # st.write("Total Companies found: ", table_count)
     st.write("Listing first 10 Companies", table_head)
 
     st.download_button(
