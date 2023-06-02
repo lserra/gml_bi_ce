@@ -23,7 +23,6 @@ RUN chmod a+x *.sh && chmod a+x *.py
 ENV APP_PATH /gml_bi_ce
 
 EXPOSE 8501
-
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+EXPOSE 40000
 
 CMD ["bash", "start_app.sh"]
