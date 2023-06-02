@@ -26,7 +26,5 @@ case $TOOL in
   /bin/bash $PWD/start_bi_app.sh;;
 "eda")
   /bin/bash $PWD/start_eda_app.sh;;
-"terminal")
-  /bin/bash;;
 esac
 exit
