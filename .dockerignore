@@ -9,4 +9,5 @@ src/load/__pycache__
 src/transform/__pycache__
 src/utils/__pycache__
 venv/
-
+*.db
+*.log

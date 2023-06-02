@@ -6,11 +6,15 @@ import yaml
 from yaml.loader import SafeLoader
 
 import dash_tool
+from config import Config
 from src.auth.authenticate import Authenticate
+
+# Initializing objects
+env = Config()
 
 if __name__ == "__main__":
     # Loading config file
-    with open("/Users/lserra/PycharmProjects/gml_bi/config.yaml") as file:
+    with open(f"{env.APP_PATH}/config.yaml") as file:
         config = yaml.load(file, Loader=SafeLoader)
 
     # Creating the authenticator object
