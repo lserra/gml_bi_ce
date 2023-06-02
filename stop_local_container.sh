@@ -4,4 +4,4 @@
 # Created by: laercio.serra@gmail.com
 # Created at: 21/03/2023
 # ==============================================================================
-docker stop gml_cnpj_bi
+docker stop gml_cnpj_bi_ce

@@ -8,5 +8,5 @@ echo ">>> Running BI container . . ."
 docker run --rm \
   --network gml-cnpj \
   --publish 8501:8501 \
-  --name gml_cnpj_bi \
-  -i -t gml_cnpj/bi:1.0
+  --name gml_cnpj_bi_ce \
+  -i -t gml_cnpj/bi_ce:1.0
