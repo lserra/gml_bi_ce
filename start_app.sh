@@ -18,8 +18,8 @@ echo "==========================================================================
 echo
 echo "SETTINGS:"
 echo "> Working dir:" $PWD
-echo "> BI Tool:" $TOOL
-echo
+echo "> Please, inform the BI tool: [ dash OR eda ]"
+read TOOL
 
 case $TOOL in
 "dash")

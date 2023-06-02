@@ -130,7 +130,7 @@ echo "[                        STARTING BI APPLICATION . . .                    
 echo "=================================================================================="
 echo
 
-echo "Enter UF:"
+echo "> Enter UF:"
 read UF
 # Check if file is readable/executable
 file="wat.py"
