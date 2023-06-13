@@ -68,11 +68,42 @@ dados para o seguinte caminho: `../gml_bi_ce/data/output`
 ```shell
 $ cd gml_bi_ce
 $ bash build_local_image.sh
+>>> Initializing Docker-App image for gml_cnpj/bi_ce . . .
+[+] Building 156.3s (13/13) FINISHED                                                                                                                                              
+ => [internal] load build definition from dockerfile-bi                                                                                                                      0.1s
+ => => transferring dockerfile: 671B                                                                                                                                         0.0s
+ => [internal] load .dockerignore                                                                                                                                            0.1s
+ => => transferring context: 264B                                                                                                                                            0.0s
+ => [internal] load metadata for docker.io/library/python:3.9-buster                                                                                                         3.8s
+ => [auth] library/python:pull token for registry-1.docker.io                                                                                                                0.0s
+ => [1/7] FROM docker.io/library/python:3.9-buster@sha256:f350d5f7d979b56ea473b6c8520c506d4a1b5befb9abbc53e8b9cd79da1a920b                                                   4.7s
+ => => resolve docker.io/library/python:3.9-buster@sha256:f350d5f7d979b56ea473b6c8520c506d4a1b5befb9abbc53e8b9cd79da1a920b                                                   0.0s
+ => => sha256:22ec6efe74fe398590a377b89564306a65219da61ff69bb9f0a0eb0d5e4e9728 18.00MB / 18.00MB                                                                             2.6s
+ => => sha256:f350d5f7d979b56ea473b6c8520c506d4a1b5befb9abbc53e8b9cd79da1a920b 988B / 988B                                                                                   0.0s
+ => => sha256:aa07d07889c780f24b3a07f34e555d96f1e5dcbf271b80f3a40f6f2e46f6a3ba 2.01kB / 2.01kB                                                                               0.0s
+ => => sha256:1459e87f643f74ca6e5cc61c5014c315ebccb18ff187aae790dfdb5b683251d3 7.51kB / 7.51kB                                                                               0.0s
+ => => sha256:0d632624a7af80e1aebbec1b8f842a1b4e5371c8abca7c1f5595414909e2f077 244B / 244B                                                                                   0.4s
+ => => sha256:9d2b86380a872b28824680589b267370fb9032d49dc81550553ce0b65a28a2b7 2.85MB / 2.85MB                                                                               1.2s
+ => => extracting sha256:22ec6efe74fe398590a377b89564306a65219da61ff69bb9f0a0eb0d5e4e9728                                                                                    1.5s
+ => => extracting sha256:0d632624a7af80e1aebbec1b8f842a1b4e5371c8abca7c1f5595414909e2f077                                                                                    0.0s
+ => => extracting sha256:9d2b86380a872b28824680589b267370fb9032d49dc81550553ce0b65a28a2b7                                                                                    0.3s
+ => [internal] load build context                                                                                                                                            0.0s
+ => => transferring context: 12.76kB                                                                                                                                         0.0s
+ => [2/7] WORKDIR /gml_bi_ce                                                                                                                                                 0.1s
+ => [3/7] COPY ../.. .                                                                                                                                                       4.3s
+ => [4/7] RUN apt-get update && apt-get install -y     build-essential     curl     software-properties-common     && rm -rf /var/lib/apt/lists/*                           18.1s
+ => [5/7] RUN pip install --upgrade pip                                                                                                                                      5.8s 
+ => [6/7] RUN pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt                                                                                107.6s 
+ => [7/7] RUN chmod a+x *.sh && chmod a+x *.py                                                                                                                               0.4s 
+ => exporting to image                                                                                                                                                      11.2s 
+ => => exporting layers                                                                                                                                                     11.2s 
+ => => writing image sha256:3152e6dd86cdd97d5952bff88efb2f33439e573fc2bbced381f9e9aee3ec2c38                                                                                 0.0s 
+ => => naming to docker.io/gml_cnpj/bi_ce:1.0         
 ```
 
 **NOTA**: certifique-se de que o Docker está instalado no seu computador e que ele está
 ativo. Se você observar o retorno da mensagem de erro abaixo, provavelmente você não
-possui o Docker instalado, ou não ele está ativo.
+possui o Docker instalado, ou ele não está ativo.
 
 ```text
 ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker
