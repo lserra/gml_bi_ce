@@ -27,7 +27,7 @@ de adquirir licenças.
 
 O **Dashboard**, é uma ferramenta muito simples e fácil de usar, excelente para obter
 informações importantes e gerar leads. Basta filtrar por UF, Município e Tamanho da
-Empresa. E todos os valores no painel são atualizados automaticamente.
+Empresa. E todos os valores são atualizados automaticamente.
 
 Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
 salvá-los em seu próprio computador.
