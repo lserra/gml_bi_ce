@@ -39,7 +39,7 @@ Mas há algumas _limitações_:
 - Os dados disponibilizados é uma parte do banco de dados completo.
 - O banco de dados completo contém mais de 30 milhões de empresas (CNPJ).
 - Para usar este banco de dados completo, você pode escolher
-  um [Plano](https://www.getmoreleads.com.br/plans/) e utilizar a nossa Solução Cloud.
+  um [Plano](https://www.getmoreleads.com.br/plan/) e utilizar a nossa Solução Cloud.
 - Ou você pode [fazer contato](mailto:service@getmoreleads.com.br), para saber mais
   sobre listas segmentadas que estejam mais adequado às suas necessidades.
 
