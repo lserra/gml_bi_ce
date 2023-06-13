@@ -26,7 +26,7 @@ de adquirir licenças.
   Docker. Para utilizar esta ferramenta, é necessário executar um comando no terminal.
 
 O **Dashboard**, é uma ferramenta muito simples e fácil de usar, excelente para obter
-informações importantes e gerar leads. Basta filtrar por UF, Município e Tamanho da
+informações rápidas e gerar leads. Basta filtrar por UF, Município e Tamanho da
 Empresa. E todos os valores são atualizados automaticamente.
 
 Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
