@@ -115,6 +115,14 @@ _docker container_:
 
 ```shell
 $ bash start_local_container.sh
+=========================== [ GML BI TOOLS ] =====================================
+==================================================================================
+[             W E L C O M E   T O   G M L   B I   T O O L S                      ]
+==================================================================================
+
+SETTINGS:
+> Working dir: /gml_bi_ce
+> Please, inform the BI tool: [ dash OR eda ]
 ```
 
 ## Usage CLI command
