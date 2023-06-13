@@ -179,23 +179,26 @@ Collecting usage statistics. To deactivate, set browser.gatherUsageStats to Fals
 internet. Também é possível acessar a aplicação usando o seguinte endereço:
 `http://localhost:8501`
 
+6-Para entrar na aplicação, use as seguintes credenciais (user/password):
+`admin`/`admin`.
+
 ## Partnership or Sponsorship
 
-Se você encontrou algum _bug_, ou se você tem uma idea ou sugestão de melhoria por
-favor, [create an isse](https://github.com/lserra/gml_bi_ce/issues).
+Se você encontrou algum _bug_, ou se você tem uma idea ou sugestão de melhoria, por
+favor [create an issue](https://github.com/lserra/gml_bi_ce/issues).
 
 Ou, se você está interessado em contribuir com este projeto, por favor envie-nos um
 [e-mail](mailto:contribute@getmoreleads.com.br).
 
-Mas, você também pode nos pagar um café, basta clicar no link abaixo:
+Mas se preferir, você também pode nos pagar um café, basta clicar no link abaixo:
 
 <a href="https://buymeacoffee.com/cYXalAb" target="_blank">
 <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
 </a>
 
-## Comments
+## License
 
-This app is licensed under MIT copyright and is open-source.
+Esta é uma aplicação open-source e segue as regras de licenciamento do MIT.
 
 ```text
 The MIT License (MIT)
