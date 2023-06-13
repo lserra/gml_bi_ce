@@ -13,7 +13,7 @@ Esta ferramenta é de uso gratuito.
 Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) a
 base de dados.
 
-Este banco de dados contém 6M Empresas e o tamanho é de aproximadamente 500MB.
+Este banco de dados contém 6M de empresas e o tamanho é de aproximadamente 500MB.
 
 Esses dados foram limpos e enriquecidos e estão disponíveis para serem usados através
 de um **Dashboard** ou **EDA**. Ambos são ferramentas analíticas, conhecidas como Web
