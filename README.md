@@ -11,19 +11,19 @@ Esta ferramenta é de uso gratuito.
 ## Como funciona?
 
 Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) a
-base de dados. Este banco de dados contém 6M Empresas (CNPJ) e o tamanho é de
-aproximadamente 500MB.
+base de dados.
 
-Esses dados foram limpos e enriquecidos e estão disponíveis para serem usados por meio
+Este banco de dados contém 6M Empresas e o tamanho é de aproximadamente 500MB.
+
+Esses dados foram limpos e enriquecidos e estão disponíveis para serem usados através
 de um **Dashboard** ou **EDA**. Ambos são ferramentas analíticas, conhecidas como Web
 Analysis Tool (WAT), onde você pode executar no seu próprio computador sem a necessidade
 de adquirir licenças.
 
-- **Dashboard**: ferramenta de análise primária, iniciada automaticamente quando usado
-  com o Docker.
-- **EDA**: ferramenta de análise secundária, possui diversos recursos para fazer uma
-  análise exploratória de dados, e não é iniciada automaticamente quando usado com o
-  Docker. Para utilizar esta ferramenta, é necessário executar um comando no terminal.
+- **Dashboard**: ferramenta web de análise (primária), para obter informações rápidas e
+  gerar leads.
+- **EDA**: ferramenta web de análise (secundária), possui diversos recursos para fazer
+  análise exploratória de dados.
 
 O **Dashboard**, é uma ferramenta muito simples e fácil de usar, excelente para obter
 informações rápidas e gerar leads. Basta filtrar por UF, Município e Tamanho da
@@ -32,27 +32,32 @@ Empresa. E todos os valores são atualizados automaticamente.
 Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
 salvá-los em seu próprio computador.
 
-<_insira uma amostra da imagem do painel_>
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
 
 Mas há algumas _limitações_:
 
 - Os dados disponibilizados é uma parte do banco de dados completo.
-- O banco de dados completo contém mais de 30 milhões de empresas (CNPJ).
-- Para usar este banco de dados completo, você pode escolher
+- O banco de dados completo contém mais de 30 milhões de empresas.
+- Para usar este banco de dados completo, você precisa escolher
   um [Plano](https://www.getmoreleads.com.br/plan/) e utilizar a nossa Solução Cloud.
 - Ou você pode [fazer contato](mailto:service@getmoreleads.com.br), para saber mais
   sobre listas segmentadas que estejam mais adequado às suas necessidades.
 
 **NOTAS**:
 
-- Esta versão do aplicativo não foi criada ou testada para rodar no Windows apenas em
+- Esta versão do aplicativo não foi criada ou testada para rodar no Windows, apenas em
   Linux e Mac.
 - Para rodar no Windows recomendamos o uso do Docker.
 
 ## Como instalar?
 
-Você precisa ter o `git` instalado em sua máquina. Digite o comando abaixo para clonar o
-repositório do GitHub:
+Você precisa ter o `git` instalado na sua máquina.
+
+Digite o comando abaixo para clonar o repositório do GitHub:
 
 ````shell
 $ git@github.com:lserra/gml_bi_ce.git
@@ -110,8 +115,7 @@ ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is th
 daemon running?
 ```
 
-3-Em seguida, usando a janela do terminal, execute o comando abaixo, para ativar o
-_docker container_:
+3-Em seguida, execute o comando abaixo, para ativar o _docker container_:
 
 ```shell
 $ bash start_local_container.sh
@@ -123,77 +127,67 @@ $ bash start_local_container.sh
 SETTINGS:
 > Working dir: /gml_bi_ce
 > Please, inform the BI tool: [ dash OR eda ]
+dash
 ```
 
-## Usage CLI command
-
-You should type the commands below:
-
-```shell script
-$ cd tpodcli
-$ bash tpod.sh
-```
-
-Output on your screen:
+4-Neste momento é possível escolher qual ferramenta usar. Se você deseja usar a
+ferramenta para obter informação rápida e gerar leads, então digite `dash`.
+Se você deseja usar a ferramenta de exploração de dados, então digite `eda`.
 
 ```text
-------------------------------------------------------------
-|||||||||||||||||| |||||[   tpod   ]||||| ||||||||||||||||||
-------------------------------------------------------------
-Podcast Audio File (MP3): Episode-142.mp3
-Translating to Portuguese [N]: N
+==================================================================================
+[                         CHECKING APPLICATION . . .                             ]
+==================================================================================
+
+===> [OK] - '/data' directory found!
+===> [OK] - '/logs' directory found!
+===> [OK] - '/src' directory found!
+===> [OK] - SCRIPT: put_bt_empresas_in_dw.py found
+===> [OK] - SCRIPT: dw_operations.py found
+===> [OK] - SCRIPT: logger_app.py found
+===> [OK] - SCRIPT: wat.py found
+===> [OK] - SCRIPT: config.py found
+===> [OK] - SCRIPT: dashboard.py found
+===> [OK] - SCRIPT: eda_tool.py found
+===> [OK] - SCRIPT: login.py found
+===> [OK] - SCRIPT: test_gml_bi.py found
+
+==================================================================================
+[                           TESTING APPLICATION . . .                            ]
+==================================================================================
+
+....
+----------------------------------------------------------------------
+Ran 4 tests in 9.899s
+
+OK
+
+==================================================================================
+[                          STARTING APPLICATION . . .                            ]
+==================================================================================
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://0.0.0.0:8501
 ```
 
-About the questions:
-
-- For the first question you should type the full name of the audio file (podcast)¹.
-- For the second question you should type Y (Yes) or N (No) to translate from English to
-  Portuguese.
-
-¹ *Note on library usage*:
-
-- The audio file (podcast) is considered _**short**_, when the duration is smaller than
-  60" (seconds).
-- The audio file (podcast) is considered _**long**_, when the duration is longer than
-  60" (seconds).
-
-**Important**:
-
-If the message below pops up on your screen during the app execution, DON'T WORRY!
-
-``` text
-RuntimeWarning: Couldn't find ffmpeg or avconv
-```
-
-It's not a bug and it's just WARNING! ⚠️
-
-So, to use this app successfully is necessary to have installed on your machine the
-following library ``ffmpeg``.
-To know more about this library, please click [here](https://ffmpeg.org/about.html).
-
-To download and install this library in your machine, please follow these
-instructions [here](https://ffmpeg.org/download.html).
-
-## Usage Docker
-
-If you have Docker daemon installed in your machine you can use this app on Windows,
-Linux or Mac.
-You should execute the command below into the location of the directory containing the
-Dockerfile.
-
-```shell script
-$ cd tpodcli
-$ docker build t tpod/cli .
-```
+5-Copie o endereço que aparece no seu terminal e cole no seu navegador (browser) de
+internet. Também é possível acessar a aplicação usando o seguinte endereço:
+`http://localhost:8501`
 
 ## Partnership or Sponsorship
 
-If you found any issue or bug, please send us an [e-mail](mailto:tpodapp@gmail.com).
+Se você encontrou algum _bug_, ou se você tem uma idea ou sugestão de melhoria por
+favor, [create an isse](https://github.com/lserra/gml_bi_ce/issues).
 
-Or, if you have an idea or suggestion to improve it, or you are interested to contribute
-with this project, please send us an [e-mail](mailto:tpodapp@gmail.com).
+Ou, se você está interessado em contribuir com este projeto, por favor envie-nos um
+[e-mail](mailto:contribute@getmoreleads.com.br).
 
-Or, if you prefer, you can . . .
+Mas, você também pode nos pagar um café, basta clicar no link abaixo:
 
 <a href="https://buymeacoffee.com/cYXalAb" target="_blank">
 <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
