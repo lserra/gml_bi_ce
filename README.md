@@ -65,7 +65,7 @@ $ git@github.com:lserra/gml_bi_ce.git
 
 ## Como usar?
 
-1-Após clonar o repositório e baixar o banco de dados, você precisa mover a base de
+1-Após clonar o repositório e baixar o banco de dados, você precisa mover este banco de
 dados para o seguinte caminho: `../gml_bi_ce/data/output`
 
 2-Usando a janela do terminal, execute os comandos abaixo, para criar um _docker image_:
