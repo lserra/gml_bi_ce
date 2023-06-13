@@ -1,121 +1,82 @@
 # GML BI Community Edition
 
-This is a Data Analytics Platform to help you to get more leads, increase your sales and
-revenue.
+Esta é uma ferramenta de análise de dados que pode ajudá-lo a obter mais leads, aumentar
+suas vendas e receita.
 
-You can use those data with our other integration tools to improve your customer
-relationship, reputation tracking or get more feedback. This tool is free (Community
-Edition).
+É possível integrar os dados com nossas outras ferramentas, para melhorar o
+relacionamento com o cliente (CRM), ou melhorar a sua reputação ou ainda obter feedback.
 
-## How does it work?
+Esta ferramenta é de uso gratuito.
 
-First all, you need to [download](https://www.getmoreleads.com.br/download/) the
-database. This database contains 6M Companies (CNPJ) and the size is roughly 500MB.
+## Como funciona?
 
-Those data have been cleaned up and enriched, and they are available to be used through
-**Dashboard** or **EDA** tools. Both are Web Analysis Tool (WAT) where you run locally.
+Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) a
+base de dados. Este banco de dados contém 6M Empresas (CNPJ) e o tamanho é de
+aproximadamente 500MB.
 
-- **Dashboard**: it's the tool started initially when using with Docker.
-- **EDA**: this tool has many features for an exploratory data analysis, and
-  it's not started initially when using with Docker. To use this tool is necessary
-  to execute a command in the terminal.
+Esses dados foram limpos e enriquecidos e estão disponíveis para serem usados por meio
+de um **Dashboard** ou **EDA**. Ambos são ferramentas analíticas, conhecidas como Web
+Analysis Tool (WAT), onde você pode executar no seu próprio computador sem a necessidade
+de adquirir licenças.
 
-The **Dashboard**, it's the tool started initially when using with Docker, being
-user-friendly and very easy to get insights and generate leads. Just filter by UF,
-Municipio, and Company Size. And all values in the dashboard are refreshed
-automatically.
+- **Dashboard**: ferramenta de análise primária, iniciada automaticamente quando usado
+  com o Docker.
+- **EDA**: ferramenta de análise secundária, possui diversos recursos para fazer uma
+  análise exploratória de dados, e não é iniciada automaticamente quando usado com o
+  Docker. Para utilizar esta ferramenta, é necessário executar um comando no terminal.
 
-Also, you are able to export/download this data to a CSV file format and save it
-in your own computer.
+O **Dashboard**, é uma ferramenta muito simples e fácil de usar, excelente para obter
+informações importantes e gerar leads. Basta filtrar por UF, Município e Tamanho da
+Empresa. E todos os valores no painel são atualizados automaticamente.
 
-<_insert a sample of the dashboard image_>
+Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
+salvá-los em seu próprio computador.
 
-But there are a few _limitations_:
+<_insira uma amostra da imagem do painel_>
 
-- The data available with this Data Analytics Platform is partial.
-- The complete database contains more than 30M Companies (CNPJ).
-- To use this complete database you can choose
-  a [Plan](https://www.getmoreleads.com.br/plans/) and use our Cloud Solution.
-- Or you can [contact us](mailto:service@getmoreleads.com.br) to make specific lists
-  more fit with your needs.
+Mas há algumas _limitações_:
 
-**NOTES**:
+- Os dados disponibilizados é uma parte do banco de dados completo.
+- O banco de dados completo contém mais de 30 milhões de empresas (CNPJ).
+- Para usar este banco de dados completo, você pode escolher
+  um [Plano](https://www.getmoreleads.com.br/plans/) e utilizar a nossa Solução Cloud.
+- Ou você pode [fazer contato](mailto:service@getmoreleads.com.br), para saber mais
+  sobre listas segmentadas que estejam mais adequado às suas necessidades.
 
-- This app version was not created or tested to run on Windows just Linux and Mac.
-- To run on Windows we recommend you to use Docker.
+**NOTAS**:
+
+- Esta versão do aplicativo não foi criada ou testada para rodar no Windows apenas em
+  Linux e Mac.
+- Para rodar no Windows recomendamos o uso do Docker.
 
 ## How to install?
 
-You need to have `git` installed in your machine. Type the commands below to clone the
-repository from GitLab:
+You need to have `git` installed in your machine. Type the command below to clone the
+repository from GitHub:
 
 ````shell
-$ git@gitlab.com:l_serra/transcribe.git
+$ git@github.com:lserra/gml_bi_ce.git
 ````
 
 ## How to use?
 
-1-Download your favorite podcast and save it into the local path app: `/tpodcli/data`
+1-After download the database you need to move to the path: `../gml_bi_ce/data/input`
 
-2-The audio file should be in the **MP3** format.
-
-3-Using the terminal window execute the commands described below:
+2-Using the terminal window execute the commands described below, to create docker
+image:
 
 ```shell script
-$ cd tpodcli
-$ bash install.sh
+$ cd gml_bi_ce
+$ bash build_local_image.sh
 ```
 
-The command above will check all folders structure and files necessary to run the
-application.
+3-Using the terminal window execute the commands described below, to run docker
+container:
 
-After that, if no errors has been found, you are ready to use the `tpod` app to start
-your transcription and/or translation.
-
-Automatically, a prompt appears to you, asking you to inform the name of the audio
-file (podcast).
-
-4-Type the name of the audio file (podcast).
-
-**NOTES**:
-
-- The podcast is a _**short**_ audio file if the duration is smaller than 60" (seconds).
-
-- The podcast is a _**long**_ audio file if the duration is bigger than 60" (seconds).
-
-This is necessary because for long audio files the `tpod` app works with audio
-optimization.
-
-5-After you've typed the name of the audio file (podcast), a new prompt appears asking
-you about the translation to Portuguese (Y/N).
-
-You should type `Y` for Yes - if you want to translate to Portuguese, or
-
-You should type `N` for No - if you don't want to translate to Portuguese.
-
-6-The output files are: `audio_transcript.csv` and `audio_transcript_pt.csv`.
-
-You can find these files into the local path app: `/tpodcli/output`.
-
-For this version, the main capabilities are: transcription and translation from audio
-file (podcast) in EN-PT (English/Portuguese).
-
-But, if you prefer you can use our [API](http://www.tpod.app.br/blog/api.html).
-Thus, you can transcribe and translate your favorite podcast from other languages:
-
-- EN/FR ou FR/EN (English/French or French/English)
-- EN/ES ou ES/EN (English/Spanish or Spanish/English)
-
-Or, if you're interested you can try out our other products/services:
-
-- tpod Web
-- tpod API
-- storage and search podcasts
-- transcribe and translate video's file
-
-New updates are coming soon.
-
-Please, visit our [site](http://www.tpod.app.br/)
+```shell script
+$ cd gml_bi_ce
+$ bash start_local_container.sh
+```
 
 ## Usage CLI command
 
@@ -198,7 +159,7 @@ This app is licensed under MIT copyright and is open-source.
 ```text
 The MIT License (MIT)
 
-Copyright (c) 2021 Laercio Serra
+Copyright (c) 2023 Laercio Serra
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
