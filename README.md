@@ -49,32 +49,40 @@ Mas há algumas _limitações_:
   Linux e Mac.
 - Para rodar no Windows recomendamos o uso do Docker.
 
-## How to install?
+## Como instalar?
 
-You need to have `git` installed in your machine. Type the command below to clone the
-repository from GitHub:
+Você precisa ter o `git` instalado em sua máquina. Digite o comando abaixo para clonar o
+repositório do GitHub:
 
 ````shell
 $ git@github.com:lserra/gml_bi_ce.git
 ````
 
-## How to use?
+## Como usar?
 
-1-After download the database you need to move to the path: `../gml_bi_ce/data/input`
+1-Após clonar o repositório e baixar o banco de dados, você precisa mover a base de
+dados para o seguinte caminho: `../gml_bi_ce/data/output`
 
-2-Using the terminal window execute the commands described below, to create docker
-image:
+2-Usando a janela do terminal, execute os comandos abaixo, para criar um _docker image_:
 
-```shell script
+```shell
 $ cd gml_bi_ce
 $ bash build_local_image.sh
 ```
 
-3-Using the terminal window execute the commands described below, to run docker
-container:
+**NOTA**: certifique-se de que o Docker está instalado no seu computador e que ele está
+ativo. Se você observar o retorno da mensagem de erro abaixo, provavelmente você não
+possui o Docker instalado, ou não ele está ativo.
 
-```shell script
-$ cd gml_bi_ce
+```text
+ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker
+daemon running?
+```
+
+3-Em seguida, usando a janela do terminal, execute o comando abaixo, para ativar o
+_docker container_:
+
+```shell
 $ bash start_local_container.sh
 ```
 
