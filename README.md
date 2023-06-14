@@ -147,7 +147,7 @@ Se você deseja usar a ferramenta de exploração de dados, então digite `eda`.
 ===> [OK] - SCRIPT: logger_app.py found
 ===> [OK] - SCRIPT: wat.py found
 ===> [OK] - SCRIPT: config.py found
-===> [OK] - SCRIPT: dashboard.py found
+===> [OK] - SCRIPT: dash_tool.py found
 ===> [OK] - SCRIPT: eda_tool.py found
 ===> [OK] - SCRIPT: login.py found
 ===> [OK] - SCRIPT: test_gml_bi.py found
