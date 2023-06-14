@@ -32,11 +32,11 @@ Empresa. E todos os valores são atualizados automaticamente.
 Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
 salvá-los em seu próprio computador.
 
-![img.png](docs/images/img.png)
+![img.png](docs/images/img_1.png)
 
-![img_1.png](docs/images/img_1.png)
+![img_1.png](docs/images/img_2.png)
 
-![img_2.png](docs/images/img_2.png)
+![img_2.png](docs/images/img_3.png)
 
 Mas há algumas _limitações_:
 
