@@ -79,9 +79,9 @@ fi
 
 file="dash_tool.py"
 if [ -e $file ]; then
-	echo "===> [OK] - SCRIPT: dashboard.py found"
+	echo "===> [OK] - SCRIPT: dash_tool.py found"
 else
-	echo "===> [NOK] - SCRIPT: dashboard.py NOT found!"
+	echo "===> [NOK] - SCRIPT: dash_tool.py NOT found!"
 	exit
 fi
 
