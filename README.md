@@ -184,7 +184,7 @@ internet. Também é possível acessar a aplicação usando o seguinte endereço
 
 ## Partnership or Sponsorship
 
-Se você encontrou algum _bug_, ou se você tem uma idea ou sugestão de melhoria, por
+Se você encontrou algum _bug_, ou se você tem uma idéia ou sugestão de melhoria, por
 favor [create an issue](https://github.com/lserra/gml_bi_ce/issues).
 
 Ou, se você está interessado em contribuir com este projeto, por favor envie-nos um
