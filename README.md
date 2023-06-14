@@ -10,8 +10,8 @@ Esta ferramenta é de uso gratuito.
 
 ## Como funciona?
 
-Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) a
-base de dados.
+Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) o
+banco de dados.
 
 Este banco de dados contém 6M de empresas e o tamanho é de aproximadamente 500MB.
 
