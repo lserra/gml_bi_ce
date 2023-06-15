@@ -1,6 +1,10 @@
+![GitHub](https://img.shields.io/github/license/lserra/gml_bi_ce)
+![GitHub repo size](https://img.shields.io/github/repo-size/lserra/gml_bi_ce)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sqlalchemy)
+
 # GML BI Community Edition (Open Source)
 
-## Exploratory Data Analysis (EDA)
+## Eda Tool
 
 Para gerar insights de negócios através dos dados, é preciso que esses dados
 sejam de qualidade. E, para garantir a qualidade dos dados, é possível usar a Análise
@@ -23,16 +27,16 @@ banco de dados.
 Este banco de dados contém 6M de empresas e o tamanho é de aproximadamente 500MB.
 
 Esses dados foram limpos e enriquecidos e estão disponíveis para serem usados através
-de um **Dashboard** ou **EDA**. Ambos são ferramentas analíticas, conhecidas como Web
+de um **Dash** ou **Eda** Tools. Ambos são ferramentas analíticas, conhecidas como Web
 Analysis Tool (WAT), onde você pode executar no seu próprio computador sem a necessidade
 de adquirir licenças.
 
-- **Dashboard**: ferramenta web de análise (primária), para obter informações rápidas e
+- **Dash Tool**: ferramenta web de análise (primária), para obter informações rápidas e
   gerar leads.
-- **EDA**: ferramenta web de análise (secundária), possui diversos recursos para fazer
-  análise exploratória de dados.
+- **Eda Tool**: ferramenta web de análise (secundária), possui diversos recursos para
+  fazer análise exploratória de dados.
 
-O **EDA**, é uma ferramenta muito simples e fácil de usar, excelente para obter
+O **Eda Tool**, é uma ferramenta muito simples e fácil de usar, excelente para obter
 insights, identificar padrões, tendência e qualidade nos dados.
 
 Além disso, você pode exportar/baixar os dados para um formato de arquivo CSV e
@@ -197,26 +201,11 @@ Mas se preferir, você também pode nos pagar um café, basta clicar no link aba
 Esta é uma aplicação open-source e segue as regras de licenciamento do MIT.
 
 ```text
-The MIT License (MIT)
+                      GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
-Copyright (c) 2023 Laercio Serra
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
 ```
 
