@@ -204,7 +204,7 @@ Mas se preferir, você também pode nos pagar um café, basta clicar no link aba
 
 ## License
 
-Esta é uma aplicação open-source e segue as regras de licenciamento do MIT.
+Esta é uma aplicação open-source e segue as regras de licenciamento GNU.
 
 ```text
                       GNU GENERAL PUBLIC LICENSE
