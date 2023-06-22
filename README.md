@@ -12,7 +12,8 @@ suas vendas e receita.
 É possível integrar os dados com nossas outras ferramentas, para melhorar o
 relacionamento com o cliente (CRM), ou melhorar a sua reputação ou ainda obter feedback.
 
-Esta ferramenta é de uso gratuito.
+Esta ferramenta é de uso
+gratuito. [Para saber mais sobre o Dash Tool](https://github.com/lserra/gml_bi_ce/wiki)
 
 ## Como funciona?
 

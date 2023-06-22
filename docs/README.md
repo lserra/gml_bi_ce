@@ -11,7 +11,8 @@ sejam de qualidade. E, para garantir a qualidade dos dados, é possível usar a 
 Exploratória de Dados (EDA). Através dela é possível identificar erros e detectar
 desvios.
 
-Esta ferramenta é de uso gratuito.
+Esta ferramenta é de uso
+gratuito. [Para saber mais sobre o Dash Tool](https://github.com/lserra/gml_bi_ce/wiki)
 
 ![img.png](images/img_4.png)
 
