@@ -64,7 +64,7 @@ Você precisa ter o `git` instalado na sua máquina.
 Digite o comando abaixo para clonar o repositório do GitHub:
 
 ````shell
-$ git@github.com:lserra/gml_bi_ce.git
+$ git clone git@github.com:lserra/gml_bi_ce.git
 ````
 
 ## Como usar?
