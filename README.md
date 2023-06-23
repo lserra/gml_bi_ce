@@ -189,6 +189,8 @@ internet. Também é possível acessar a aplicação usando o seguinte endereço
 6-Para entrar na aplicação, use as seguintes credenciais (user/password):
 `admin`/`admin`.
 
+![img.png](docs/images/img_7.png)
+
 ## Partnership or Sponsorship
 
 Se você encontrou algum _bug_, ou se você tem uma idéia ou sugestão de melhoria, por
