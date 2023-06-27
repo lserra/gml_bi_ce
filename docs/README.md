@@ -12,7 +12,7 @@ Exploratória de Dados (EDA). Através dela é possível identificar erros e det
 desvios.
 
 Esta ferramenta é de uso
-gratuito. [Para saber mais sobre o Dash Tool](https://github.com/lserra/gml_bi_ce/wiki)
+gratuito. [Para saber mais sobre o Eda Tool](https://github.com/lserra/gml_bi_ce/wiki/Eda)
 
 ![img.png](images/img_4.png)
 
