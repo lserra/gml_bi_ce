@@ -4,7 +4,7 @@
 
 # GML BI Community Edition
 
-## Dash Tool
+## Dashtool
 
 Esta é uma ferramenta de análise de dados que pode ajudá-lo a obter mais leads, aumentar
 suas vendas e receita.
@@ -13,11 +13,11 @@ suas vendas e receita.
 relacionamento com o cliente (CRM), ou melhorar a sua reputação ou ainda obter feedback.
 
 Esta ferramenta é de uso
-gratuito. [Para saber mais sobre o Dash Tool](https://github.com/lserra/gml_bi_ce/wiki)
+gratuito. [Para saber mais sobre o Dashtool](https://github.com/lserra/gml_bi_ce/wiki)
 
 ## Como funciona?
 
-Primeiramente, você precisa [baixar](https://www.getmoreleads.com.br/download/) o
+Primeiramente, você precisa [baixar](http://www.leadsgeneration.com.br/) o
 banco de dados.
 
 Este banco de dados contém 6M de empresas e o tamanho é de aproximadamente 500MB.
@@ -27,12 +27,12 @@ de um **Dash** ou **Eda** Tools. Ambos são ferramentas analíticas, conhecidas 
 Analysis Tool (WAT), onde você pode executar no seu próprio computador sem a necessidade
 de adquirir licenças.
 
-- **Dash Tool**: ferramenta web de análise (primária), para obter informações rápidas e
+- **Dashtool**: ferramenta web de análise (primária), para obter informações rápidas e
   gerar leads.
-- **Eda Tool**: ferramenta web de análise (secundária), possui diversos recursos para
+- **Edatool**: ferramenta web de análise (secundária), possui diversos recursos para
   fazer análise exploratória de dados.
 
-O **Dash Tool**, é uma ferramenta muito simples e fácil de usar, excelente para obter
+O **Dashtool**, é uma ferramenta muito simples e fácil de usar, excelente para obter
 informações rápidas e gerar leads. Basta filtrar por UF, Município e Tamanho da
 Empresa. E todos os valores são atualizados automaticamente.
 
@@ -50,8 +50,8 @@ Mas há algumas _limitações_:
 - Os dados disponibilizados é uma parte do banco de dados completo.
 - O banco de dados completo contém mais de 30 milhões de empresas.
 - Para usar este banco de dados completo, você precisa escolher
-  um [Plano](https://www.getmoreleads.com.br/plan/) e utilizar a nossa Solução Cloud.
-- Ou você pode [fazer contato](mailto:service@getmoreleads.com.br), para saber mais
+  um [Plano](http://www.leadsgeneration.com.br/) e utilizar a nossa Solução Cloud.
+- Ou você pode [fazer contato](mailto:comercial@getmoreleads.com.br), para saber mais
   sobre listas segmentadas que estejam mais adequado às suas necessidades.
 
 **NOTAS**:
@@ -195,15 +195,6 @@ internet. Também é possível acessar a aplicação usando o seguinte endereço
 
 Se você encontrou algum _bug_, ou se você tem uma idéia ou sugestão de melhoria, por
 favor [create an issue](https://github.com/lserra/gml_bi_ce/issues).
-
-Ou, se você está interessado em contribuir com este projeto, por favor envie-nos um
-[e-mail](mailto:contribute@getmoreleads.com.br).
-
-Mas se preferir, você também pode nos pagar um café, basta clicar no link abaixo:
-
-<a href="https://buymeacoffee.com/cYXalAb" target="_blank">
-<img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
-</a>
 
 ## License
 
